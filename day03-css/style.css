@@ -1,0 +1,53 @@
+html {
+    font-family: 'Lobster', Arial, Helvetica, sans-serif;
+}
+h1 {
+    color: red;
+    text-decoration: overline;
+    font-style: italic;
+    font-variant: small-caps;
+}
+
+.blue {
+    color: blue;
+}
+
+.small {
+    font-size: 0.7em;
+}
+
+.blue.small {
+    font-weight: 800;
+}
+
+.big {
+    font-size: 2em;
+}
+
+.big, .blue {
+    text-decoration: underline;
+}
+
+p a {
+    color: green;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p.small.blue a:hover {
+    text-decoration: none;
+    color: red;
+}
+
+/*pouze elementy s určitým parametrem*/
+[href="#"] {
+    font-family: 'Courier New', Courier, monospace;
+}
