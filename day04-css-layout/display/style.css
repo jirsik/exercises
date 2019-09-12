@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    margin: 0 auto;
+}
+
+main {
+    background: transparent;
+}
+
+p {
+    background: transparent;
+}
+
+.nav-link {
+    display: inline;
+}
+
+.bg {
+    background-image: url('Apple_Garage.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+}

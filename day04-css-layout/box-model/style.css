@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 1rem;
+    color: rgb(252, 242, 153);
+}
+
+body {
+    margin: 0;
+    background-image: url('grid.png');
+    height: 25rem;
+}
+
+.box {
+    /* display: inline-flex; */
+    background-color: cadetblue;
+    border: 0.3rem solid grey;
+    padding: 1em;
+    margin: 1em auto 0;
+    /*vmin-height: 20rem;
+    max-width: 20rem; */
+    height: calc(100vh - 1rem);
+    width: 50vw;
+}
+
+.box2 {
+    position: relative;
+    top: 1rem;
+    left: 1rem;
+    background-color: brown;
+}
+
+.box3 {
+    position: relative;
+    
+    background-color: rgb(71, 165, 42);
+}
