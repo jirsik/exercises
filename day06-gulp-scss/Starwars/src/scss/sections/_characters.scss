@@ -1,0 +1,33 @@
+#characters {
+    background-image: url('/img/rey-standing.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.characters__flex {
+    display: flex;
+    justify-content: space-around;
+
+    img {
+        border-radius: 100%;
+        align-self: center;
+    }
+}
+
+.char__img--2 {
+    height: 4rem;
+}
+
+.char__img--3 {
+    height: 4.5rem;
+}
+
+.char__img--4 {
+    height: 5rem;
+}
+
+
+.char__img--5 {
+    height: 5.5rem;
+}

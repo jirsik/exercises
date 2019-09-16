@@ -1,0 +1,21 @@
+#gallery {
+    padding: 2rem 0 0 0;
+    img {
+        width: 100%;
+    }
+}
+
+.gallery__flex {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 24rem;
+    padding: 0 1remm;
+
+    a {
+        padding: 1rem;
+        border: 1px white solid;
+        background-color: rgba(169, 169, 169, 0.2);
+        color: white;
+    }
+}

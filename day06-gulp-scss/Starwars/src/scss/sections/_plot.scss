@@ -1,0 +1,17 @@
+.plot__flex {
+    display: flex;
+    flex-wrap: nowrap;
+    
+    
+    img {
+        padding: 1.6rem;
+        width: 10rem;
+        align-self: flex-start;
+        // height: 15rem;
+    }
+
+    article {
+        flex-grow: 1;
+        text-align: justify;
+    }
+}

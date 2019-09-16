@@ -1,0 +1,15 @@
+nav {
+    position: fixed;
+    top: 0;
+
+    display: flex;
+    background-color: darkgray;
+    width: 100%;
+    color: white;
+
+    a {
+        padding: 0.7rem 1.2rem;
+        color: white;
+        text-decoration: none;
+    }
+}
