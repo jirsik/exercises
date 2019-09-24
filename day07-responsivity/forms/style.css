@@ -1,0 +1,11 @@
+html {
+    font-family: Helvetica, sans-serif;
+}
+
+form input {
+    font-family: Helvetica, sans-serif;
+}
+
+form label {
+    width: 8rem;
+}

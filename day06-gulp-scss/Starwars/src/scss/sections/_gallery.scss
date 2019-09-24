@@ -1,21 +1,31 @@
 #gallery {
     padding: 2rem 0 0 0;
+
     img {
+        display: block;
         width: 100%;
+
     }
 }
 
 .gallery__flex {
     display: flex;
     justify-content: space-between;
-    position: relative;
-    top: 24rem;
+    position: absolute;
+    top: calc(50% - 1.8rem);
+    width: 100%;
     padding: 0 1remm;
 
     a {
         padding: 1rem;
+        margin: 1rem;
         border: 1px white solid;
         background-color: rgba(169, 169, 169, 0.2);
         color: white;
     }
+}
+
+.gallery__container {
+    position: relative;
+    width: 100%;
 }

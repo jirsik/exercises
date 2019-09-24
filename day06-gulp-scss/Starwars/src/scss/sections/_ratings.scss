@@ -1,0 +1,41 @@
+#ratings {
+    border-bottom: 1px solid darkslategray;
+}
+
+.ratings__flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.ratings__flex--item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    h2 {
+        text-align: center;
+    }
+
+    div {
+        margin: 0 1rem;
+        width: 7rem;
+        background-color: darkslategray;
+    }
+
+    p {
+        text-align: center;
+    }
+}
+
+.ratings__item7 {
+    height: 7.5rem;
+}
+
+.ratings__item9 {
+    height: 9rem;
+}
+
+.ratings__item8 {
+    height: 8rem;
+}

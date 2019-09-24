@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Form:</h1>
+    <form action="https://classes.codingbootcamp.cz/assets/classes/request-visualization/script.php" method="GET">
+        <input type="hidden" name="foo" value="bar">
+        <label for="my_text">Text: </label>
+        <input type="text" name="my_text" id="my_text" value="" placeholder="Insert text here" required>
+        <br>
+        <label for="text_area">Text2: </label>
+        <textarea name="text_area" id="text_area" placeholder="ahoj"></textarea>
+        <br>
+        <label for="my_checkbox">check: </label>
+        <input type="checkbox" name="my_checkbox" id="my_checkbox">
+        <br>
+        <select name="my_select" id="my_select" >
+            <option value="1">a</option>
+            <option value="2">b</option>
+            <option value="3" selected>c</option>
+            <option value="4">d</option>
+
+
+        </select>
+        <br>
+        <input type="submit" value="save" name="submit">
+        <input type="submit" value="delete" name="submit">
+    </form>
+</body>
+</html>
