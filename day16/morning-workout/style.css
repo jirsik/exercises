@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+body {
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+    
+}
+
+.menu {
+    display: flex;
+    align-items: flex-start;
+    height: 100vh;
+    padding: 0 1rem;
+    width: 10rem;
+    overflow: hidden;
+    background-color: blue;
+    transition: 1s;
+}
+
+.menu--shown {
+    width: 110rem;
+}
+
+.menu img {
+    width: 2.8rem;
+    margin-top: 1rem;
+}
+
+.menu__links {
+    display: flex;
+    padding: 0 1rem;
+    flex-direction: column;
+    color: white;
+}
+
+.menu__links a {
+    color: white;
+    text-decoration: none;
+    padding: 0.3rem 0;
+    font-size: 1.2rem;
+}
+
+.menu__links a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 1rem 3rem;;
+}

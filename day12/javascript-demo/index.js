@@ -33,10 +33,27 @@
 // console.log(chess);
 
 //cards
-const ranks = ['ace', 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 'Jack', 'Queen', 'King'];
-const suits = ['Diamonds', 'Clubs', 'Hearts', 'Spades'];
-let randomRank = Math.floor(Math.random() * 14);
-let randomSuit = Math.floor(Math.random() * 4);
+// const ranks = ['ace', 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 'Jack', 'Queen', 'King'];
+// const suits = ['Diamonds', 'Clubs', 'Hearts', 'Spades'];
+// let randomRank = Math.floor(Math.random() * 14);
+// let randomSuit = Math.floor(Math.random() * 4);
 
-let card = ranks[randomRank] + ' of ' + suits[randomSuit];
-console.log('Today your lucky card is: ' + card);
+// let card = ranks[randomRank] + ' of ' + suits[randomSuit];
+// console.log('Today your lucky card is: ' + card);
+
+//min and max dice
+const min = parseFloat(prompt('min:'));
+const max = parseFloat(prompt('max:'));
+let randomNumber = (Math.floor(Math.random() * (max - min + 1)) + min);
+document.write(randomNumber);
+
+
+// function array_diff(a, b) {
+//     let result= [];
+//     for (let i = 0; i < a.length; i++) {
+//       if (a[i] !== b) {
+//         result.push(a[i]);
+//       }
+//     }
+//     return result;
+//   }
