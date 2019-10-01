@@ -29,12 +29,15 @@ body {
     color: cornsilk;
 }
 
-.shoppingList div span span {
+.danger {
     color: red;
     font-weight: 800;
 }
 
-.shoppingList div span span:hover {
-    text-decoration: underline;
+.pointer:hover {
     cursor: pointer;
+}
+
+.crossed {
+    text-decoration: line-through;
 }

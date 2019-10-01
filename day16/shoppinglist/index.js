@@ -3,24 +3,36 @@ let list = [{name: 'apples',
             {name: 'bananas',
             amount: '3 pcs'}];
 
-
-const deleteEvent = (event) => { //index počítá pouze s items 0-9
-    const sender = event.target;
-    const indexToDelete = sender.id[sender.id.length-1];
-    list.splice(indexToDelete, 1);
-    constructHtml(list);
-};
-
 const constructHtml = (array) => {
     const shoppingList = document.querySelector('.shoppingList');
     shoppingList.innerHTML = '';
-    let numberOfItems = 0;
-    for (const item of array) {
-        shoppingList.innerHTML += `<div><span>${item.name}</span><span>${item.amount} <span id="delete${numberOfItems}"> X</span></span></div>`;
-        numberOfItems++;
-    }
-    for (i = 0; i < numberOfItems; i++) {
-        document.querySelector(`#delete${i}`).addEventListener('click', deleteEvent);
+    for (let i = 0; i < array.length; i++) {
+        const listDOM = document.createElement('div');
+        const item = array[i];
+        let done = '';
+        if (item.done) {
+            done = 'crossed';
+        }
+        listDOM.innerHTML = `<span class="name pointer ${done}">${item.name}</span><span><span class="amount ${done}">${item.amount} </span><span id="delete${i}" class="pointer danger"> X</span></span>`;
+        listDOM.querySelector(`#delete${i}`).addEventListener('click', (event) => {
+            const sender = event.target;
+            const indexToDelete = sender.id[sender.id.length-1];
+            list.splice(indexToDelete, 1);
+            constructHtml(list);
+        });
+        listDOM.querySelector('.name').addEventListener('click', (event) => {
+            const sender = event.target;
+            if (item.done) {
+                item.done = false;
+                sender.classList.toggle('crossed');
+                listDOM.querySelector('.amount').classList.toggle('crossed');
+            } else {
+                item.done = true;
+                sender.classList.toggle('crossed');
+                listDOM.querySelector('.amount').classList.toggle('crossed');
+            }
+        });
+        shoppingList.appendChild(listDOM);
     }
 };
 
