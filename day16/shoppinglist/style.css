@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+}
+
+body {
+    margin: 0;
+}
+
+.headline {
+    margin: 0 auto;
+    width: 50rem;
+}
+
+.shoppingList {
+    margin: 0 auto;
+    width: 50rem;
+}
+
+.shoppingList div {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-bottom: 0.3rem;
+    background-color: cadetblue;
+    color: cornsilk;
+}
+
+.shoppingList div span span {
+    color: red;
+    font-weight: 800;
+}
+
+.shoppingList div span span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
