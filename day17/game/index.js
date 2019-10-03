@@ -13,10 +13,11 @@ class Chip {
             round.remaining--;
             document.querySelector('.score').textContent = `Score: ${round.score}`;
             chipDom.querySelector('div').className = 'none';
-            if (round.remaining === 0) {
-                setTimeout(() => {alert('Game Over');}, 100);
-            }
         });
+        setTimeout(()=>{
+            chipDom.querySelector('div').className = 'none';
+            round.remaining--;
+        }, randomT());
         playground.appendChild(chipDom);
     }
 }
@@ -43,6 +44,7 @@ const randomV = () => {
     if (result === 3) {result = 5;}
     return result;
 }
+const randomT = () => Math.floor(Math.random()*4000) + 1000;
 
 const startGame = (numberOfChips) => {
     round = new Game();
@@ -50,6 +52,14 @@ const startGame = (numberOfChips) => {
         round.addChip(randomV(),randomX(),randomY());
         round.remaining++;
     }
+    timer = setInterval(()=>{
+        round.addChip(randomV(),randomX(),randomY());
+        round.remaining++;
+    }, 300);
+    setTimeout(()=>{
+        clearInterval(timer)
+        alert('GAME OVER!!');    
+    }, 20000);
 };
 
 document.addEventListener('DOMContentLoaded', ()=>{
