@@ -1,0 +1,28 @@
+.train-seat {
+    width: 5rem;
+    height: 5rem;
+}
+
+.train-seat__seat {
+    stroke: black; 
+    stroke-width: 2;
+}
+
+.train-seat__seat--occupied {
+    fill: olive;
+}
+
+.train-seat__seat--free {
+    fill: lightgray;
+}
+
+.train-seat__seat--selected {
+    fill: orange;
+    color: white;
+}
+
+.train-seat__number {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}

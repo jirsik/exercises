@@ -1,0 +1,24 @@
+.game-wrap {
+    margin: 0.5rem 5rem;
+    border-radius: 4px;
+    background-color: beige;
+
+    h3 {
+        padding: 2rem 4rem 0;
+        }
+}
+
+.game {
+    display: flex;
+
+    img {
+        padding: 0 2rem 0 4rem;
+        align-self: flex-start;
+    }
+
+    p {
+        margin: 0;
+        padding: 0 4rem 1rem 2rem;
+        text-align: justify;
+    }
+}

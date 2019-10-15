@@ -1,0 +1,12 @@
+student
+-------
+id: integer
+first_name: short string
+last_name: short string
+date of birth: date
+gender: boolean / short string
+nationality: short string
+adress: short string
+parents: short string
+emergency phone number: number
+class: short string
