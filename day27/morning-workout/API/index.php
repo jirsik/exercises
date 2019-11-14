@@ -7,10 +7,9 @@ DB::connect('127.0.0.1', 'games', 'root', 'rootroot');
 
 if (isset($_GET["orderby"])) {
     $orderby = $_GET["orderby"];
-    if (isset($_GET["way"])) {
-        $way = $_GET['way'];
-    } else {
-        $way = "ASC";
+    $way = "ASC";
+    if (isset($_GET["way"]) && $_GET["way"] === 'desc') {
+        $way = "DESC";
     }
 }
 
